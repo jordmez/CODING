@@ -1,0 +1,237 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: xx-large;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* Layout */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0c0c14;
+    background-color: black;
+    background-image:url(/90s\ WEBSITE/Gifs/background.gif);
+    animation: background-1 5s linear infinite;
+    background-size: 10rem 10rem;
+}
+
+@keyframes background-1 {
+    50% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 100px 100px;
+    }
+    
+}
+
+.main__container {
+    display: grid;
+    /* border: solid red; */
+    grid-template-columns: .5fr 3fr .5fr;
+}
+
+/* Components */
+
+.header {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    background: rgba(128, 128, 128, 0.975);
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 50px;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+}
+
+.header a {
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.header button {
+    background-color: rgb(255, 99, 37);
+    color: blueviolet;
+    width: 15rem;
+    height: 3rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header button:hover {
+    color: white;
+    background-color: blue;
+}
+
+.main-info {
+    /* border: solid red; */
+    display: flex;
+    flex-direction: column;
+    background: rgba(128, 128, 128, 0.975);
+    font-size: larger;
+    padding-top: 2rem;
+}
+
+h2 {
+    padding-bottom: 1rem;
+}
+
+.main__a,
+.main__b,
+.main__c,
+.main__d {
+    /* border: solid red; */
+    height: 100%;
+}
+
+.main-info__heading {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+.pic__a,
+.pic__c {
+    float: left;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* .middle__advert {
+    display: flex;
+    margin-left: 2rem;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 400px;
+} */
+
+.pic__b,
+.pic__d {
+    float: right;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.hits__video {
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+}
+
+.pic__a,
+.pic__b,
+.pic__c,
+.pic__d {
+    width: 30rem;
+    height: 30rem;
+    max-width: 30rem;
+    max-height: 30rem
+}
+
+.text__a,
+.text__b,
+.text__c,
+.text__d,
+.text__c__button {
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-size: larger;
+}
+
+.sidenav {
+    width: 130px;
+    position: fixed;
+    z-index: 1;
+    top: 20px;
+    right: 25px;
+    top: 305px;
+    background: rgb(255, 99, 37);
+    overflow-x: hidden;
+    padding: 8px 0;
+    border-radius: 10px;
+}
+  
+.sidenav a {
+    padding: 10px 10px 15px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: blueviolet;
+    display: block;
+    text-align: center;
+}
+  
+.sidenav a:hover {
+    color: white;
+}
+  
+.main {
+    font-size: 28px;
+    padding: 0px 10px;
+}
+
+.text__a__button {
+    background-color: rgb(255, 99, 37);
+    color: blueviolet;
+    width: 23rem;
+    height: 5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text__c__button {
+    background-color: rgb(255, 99, 37);
+    color: blueviolet;
+    width: 20rem;
+    height: 5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text__a__button:hover,
+.text__c__button:hover {
+    color: white;
+    background-color: blue;
+}
+  
+@media screen, (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.footer {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
